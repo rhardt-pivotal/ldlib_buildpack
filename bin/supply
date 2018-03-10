@@ -1,0 +1,10 @@
+#!/bin/sh
+set -e
+
+mkdir $3/$4/lib
+
+SCRIPT_DIR="$( dirname "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" )"
+echo "\"$SCRIPT_DIR\""
+
+cp $SCRIPT_DIR/../libsrc/* $3/$4/lib
+cp $SCRIPT_DIR/../config.yml $3/$4
