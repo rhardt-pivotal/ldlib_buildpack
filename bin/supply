@@ -20,5 +20,5 @@ cat <<EOF >> $3/$4/config.yml
 name: ldlib_buildpack
 config:
   environment_variables:
-    placeholder: "true"
+    LD_LIBRARY_PATH: "\$HOME/../deps/$4/lib:\$LD_LIBRARY_PATH"
 EOF
