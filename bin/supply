@@ -4,6 +4,11 @@ set -e
 echo "IN SUPPLY!!"
 pwd
 ls -al
+
+SCRIPT_DIR=$( dirname "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" )
+echo $SCRIPT_DIR
+
+
 mkdir $3/$4/lib
 
 echo "$3/$4/lib"
