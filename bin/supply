@@ -2,7 +2,8 @@
 set -e
 
 echo "IN SUPPLY!!"
-
+pwd
+ls -al
 mkdir $3/$4/lib
 
 echo "$3/$4/lib"
