@@ -1,6 +1,8 @@
 #!/bin/sh
 set -e
 
+echo "IN SUPPLY!!"
+
 mkdir $3/$4/lib
 
 SCRIPT_DIR="$( dirname "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )" )"
